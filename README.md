@@ -32,15 +32,22 @@
 
 ```bash
 pip install pyTelegramBotAPI requests pytz schedule
+```
 
 2. Вставте свій Telegram Bot Token та X-Token від Monobank API у код:
+
+```bash
 bot = telebot.TeleBot('YOUR_TELEGRAM_BOT_TOKEN')
 
 headers = {
     "X-Token": "YOUR_MONOBANK_API_TOKEN"
 }
+```
 
 3. Запустіть файл
+
+```bash
 python bot.py
+```
 
 **##Увага: Переконайтесь, що ваш IP не блокується API Monobank, та обережно працюйте з фінансовими токенами — не комітіть їх у публічні репозиторії.**
